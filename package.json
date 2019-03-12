@@ -1,0 +1,30 @@
+{
+	"name": "fullstack-graphql-react",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon --exec babel-node server/app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tbaustin/fullstack-graphql-react.git"
+	},
+	"author": "Taylor Austin <taustin@escaladesports.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/tbaustin/fullstack-graphql-react/issues"
+	},
+	"homepage": "https://github.com/tbaustin/fullstack-graphql-react#readme",
+	"dependencies": {
+		"apollo-server": "^2.4.8",
+		"express": "^4.16.4",
+		"express-graphql": "^0.7.1",
+		"graphql": "^14.1.1",
+		"nodemon": "^1.18.10"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0"
+	}
+}
