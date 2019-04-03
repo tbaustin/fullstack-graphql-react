@@ -1,0 +1,19 @@
+type Query {
+	book(id: ID!): Book
+	bookList(filter: BookInput): [Book]
+}
+
+type Book {
+	id: ID!
+	name: String
+	genre: String
+}
+
+input BookInput {
+	name: String
+	genre: String
+	id: ID!
+	random: String
+	each: String
+	randomFive: String
+}
