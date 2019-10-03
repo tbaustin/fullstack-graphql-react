@@ -3,6 +3,10 @@ type Query {
 	bookList(filter: BookInput): [Book]
 }
 
+type Mutation {
+	deleteBook(id: ID!): Boolean
+}
+
 type Book {
 	id: ID!
 	name: String
@@ -10,10 +14,7 @@ type Book {
 }
 
 input BookInput {
+	id: ID!
 	name: String
 	genre: String
-	id: ID!
-	random: String
-	each: String
-	randomFive: String
 }

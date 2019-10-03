@@ -1,0 +1,16 @@
+type Query {
+	author(id: ID!): Author
+	authorList(filter: AuthorInput): [Author]
+}
+
+type Author {
+	id: ID!
+	name: String
+	age: Int
+}
+
+input AuthorInput {
+	id: ID!
+	name: String
+	age: Int
+}

@@ -1,9 +1,10 @@
-import { makeExecutableSchema } from 'graphql-tools'
+import { makeExecutableSchema } from 'apollo-server'
+import { mergeTypeDefs, mergeResolvers } from 'graphql-toolkit';
 
-import bookTypes from './book/schema/book.gql'
-import bookResolver from './book/resolvers/book'
 
 export const schema = makeExecutableSchema({
-	typeDefs: [bookTypes],
-	resolvers: [bookResolver]
+	typeDefs: mergeTypeDefs(types),
+	resolvers: mergeResolvers(resolvers)
 })
+
+	`${__dirname}/modules/**/resolvers/*.js`
